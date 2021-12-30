@@ -16,5 +16,5 @@ print(cfg)
 ---
 rs.reconfig(cfg)
 
-sudo mongod --port 27007 --dbpath /mnt/storage/mongodb --logpath /mnt/storage/mongodb/mongodb.log --config /etc/mongod.conf --replSet rs0 --fork
+mongod --config /etc/mongod.conf --fork
 ps -ef |grep mongo
